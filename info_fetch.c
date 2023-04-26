@@ -1,5 +1,4 @@
 #include "term.h"
-​
 /**
  * info_wipe - starts info_t struct
  * @info: struct address
@@ -11,7 +10,7 @@ void info_wipe(info_t *info)
 	info->path = NULL;
 	info->argc = 0;
 }
-​
+
 /**
  * gen_info - starts info_t struct
  * @info: struct address
@@ -20,14 +19,14 @@ void info_wipe(info_t *info)
 void gen_info(info_t *info, char **av)
 {
 	int x = 0;
-​
+
 	info->fname = av[0];
 	if (info->arg)
 	{
 		info->argv = str_tok_delim(info->arg, " \t");
 		if (!info->argv)
 		{
-​
+
 			info->argv = malloc(sizeof(char *) * 2);
 			if (info->argv)
 			{
@@ -36,14 +35,14 @@ void gen_info(info_t *info, char **av)
 			}
 		}
 		for (x = 0; info->argv && info->argv[x]; x++)
-​
+
 		info->argc = x;
-​
+
 		overwrite_alias(info);
 		overwrite_vars(info);
 	}
 }
-​
+
 /**
  * purge_info - frees info_t struct fields
  * @info: struct address
