@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * cmd_combo - test current char in buffer if its a chain delimeter

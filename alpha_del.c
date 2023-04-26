@@ -1,5 +1,5 @@
-#include "term.h"
-​
+#include "shell.h"
+
 /**
  * interactive - shows true if shell is interactive mode
  * @info: struct address
@@ -9,7 +9,7 @@ int interactive(info_t *info)
 {
 	return (isatty(STDIN_FILENO) && info->readfd <= 2);
 }
-​
+
 /**
  * _xdelim - checks if character is a delimeter
  * @c: the char to check
@@ -23,7 +23,7 @@ int _xdelim(char c, char *delim)
 			return (1);
 	return (0);
 }
-​
+
 /**
  *_xalpha - checks for alphabetic character
  *@c: The character to input
@@ -36,7 +36,7 @@ int _xalpha(int c)
 	else
 		return (0);
 }
-​
+
 /**
  *_stoint - converts string to an integer
  *@s: the string to be converted
@@ -46,12 +46,12 @@ int _stoint(char *s)
 {
 	int a, sign = 1, flag = 0, output;
 	unsigned int result = 0;
-​
+
 	for (a = 0;  s[a] != '\0' && flag != 2; a++)
 	{
 		if (s[a] == '-')
 			sign *= -1;
-​
+
 		if (s[a] >= '0' && s[a] <= '9')
 		{
 			flag = 1;
@@ -61,11 +61,11 @@ int _stoint(char *s)
 		else if (flag == 1)
 			flag = 2;
 	}
-​
+
 	if (sign == -1)
 		output = -result;
 	else
 		output = result;
-​
+
 	return (output);
 }

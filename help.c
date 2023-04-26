@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 /**
  * __help - changes the current directory of the process
  * @info: Structure containing potential arguments. Used to maintain
@@ -8,7 +8,7 @@
 int __help(info_t *info)
 {
 	char **arg_array;
-​
+
 	arg_array = info->argv;
 	_strput("help call works. Function not yet implemented \n");
 	if (0)

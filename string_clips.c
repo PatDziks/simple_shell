@@ -1,5 +1,5 @@
-#include "term.h"
-​
+#include "shell.h"
+
 /**
  * _strcpy - copies a string
  * @dest: destination
@@ -9,7 +9,7 @@
 char *_strcpy(char *dest, char *src)
 {
 	int x = 0;
-​
+
 	if (dest == src || src == 0)
 		return (dest);
 	while (src[x])
@@ -20,7 +20,7 @@ char *_strcpy(char *dest, char *src)
 	dest[x] = 0;
 	return (dest);
 }
-​
+
 /**
  * _strclone - clones a string
  * @str: string to clone
@@ -30,7 +30,7 @@ char *_strclone(const char *str)
 {
 	int len = 0;
 	char *ret;
-​
+
 	if (str == NULL)
 		return (NULL);
 	while (*str++)
@@ -42,7 +42,7 @@ char *_strclone(const char *str)
 		ret[len] = *--str;
 	return (ret);
 }
-​
+
 /**
  *_strput - displays an input string
  *@str: the string to be printed
@@ -51,7 +51,7 @@ char *_strclone(const char *str)
 void _strput(char *str)
 {
 	int x = 0;
-​
+
 	if (!str)
 		return;
 	while (str[x] != '\0')
@@ -60,7 +60,7 @@ void _strput(char *str)
 		x++;
 	}
 }
-​
+
 /**
  * _putchar - writes character c to stdout
  * @c: The character to print
@@ -71,7 +71,7 @@ int _putchar(char c)
 {
 	static int x;
 	static char buf[WRITE_BUF_SIZE];
-​
+
 	if (c == BUF_FLUSH || x >= WRITE_BUF_SIZE)
 	{
 		write(1, buf, x);

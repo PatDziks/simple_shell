@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * history_file_fetch - gets the history file

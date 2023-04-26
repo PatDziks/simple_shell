@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * env_fetch - brings string array copy of our environ

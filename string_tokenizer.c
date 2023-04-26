@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * **str_tok_delim - chops a string into words. Repeat delimiters are ignored

@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * cmd_prompt - checks if file command is executable

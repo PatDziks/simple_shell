@@ -1,4 +1,5 @@
-#include "term.h"
+#include "shell.h"
+
 /**
  * info_wipe - starts info_t struct
  * @info: struct address

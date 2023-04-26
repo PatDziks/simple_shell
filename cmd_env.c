@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * __env - displays active environment

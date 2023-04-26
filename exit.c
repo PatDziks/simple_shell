@@ -1,5 +1,5 @@
-#include "term.h"
-​
+#include "shell.h"
+
 /**
  * __exit - exits the shell
  * @info: Structure containing potential arguments. Used to maintain
@@ -10,7 +10,7 @@
 int __exit(info_t *info)
 {
 	int exitck;
-​
+
 	if (info->argv[1])  /* If there is an exit arguement */
 	{
 		exitck = stoint_err(info->argv[1]);

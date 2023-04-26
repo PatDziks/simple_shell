@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * node_input - inputs a node at begining of the list

@@ -1,5 +1,5 @@
-#include "term.h"
-​
+#include "shell.h"
+
 /**
  * st_free - clears a pointer and NULLs the address
  * @ptr: address of pointer to clear

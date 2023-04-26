@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * stoint_err - converts a string to an integer

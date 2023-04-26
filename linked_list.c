@@ -1,4 +1,4 @@
-#include "term.h"
+#include "shell.h"
 
 /**
  * cmd_list_length - calculates length of linked list
